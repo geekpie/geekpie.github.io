@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Geek-π">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="Hexo+Github.io博客搭建指南"/>
+  <meta property="og:description" content="终有一天，我要用一根网线爬下整个世界" />
+  <meta property="og:site_name" content="GeekPy"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yoursite.comundefined"/>
+  
+    <link rel="alternate" href="/atom.xml" title="GeekPy" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>GeekPy</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.dark.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Hexo+Github.io博客搭建指南</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/levblanc">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:levblanc@163.com">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Geek-π</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2017-05-09</span>
+            <span class="time">01:18:11</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/Hexo-github-MARKDOWN/">#Hexo, github,MARKDOWN</a>
+
+
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h1 id="所有之前"><a href="#所有之前" class="headerlink" title="所有之前"></a>所有之前</h1><blockquote>
+<p>俗话说的好。。。作为一个程序员。。。要么经营一个充满干货的博客，要么经营一个拥有许多 Star 的 github,这样才会在找工作时更有优势</p>
+</blockquote>
+<h1 id="List"><a href="#List" class="headerlink" title="List"></a>List</h1><ol>
+<li>Hexo 简介</li>
+<li>环境部署需求</li>
+<li>本地搭建测试</li>
+<li>推送 Github</li>
+<li>一些关于在 Linux 上部署遇到的问题</li>
+</ol>
+<h2 id="1-Hexo-简介"><a href="#1-Hexo-简介" class="headerlink" title="1.Hexo 简介"></a>1.Hexo 简介</h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 使用 Node.js 编译，Hexo 支持 GitHub Flavored Markdown 的所有功能，支持一键部署到 GitHub Pages, Heroku 或其他网站<br>官网上有详细的部署手册，而且 hexo 支持主题扩展，在官网上就可以搜到许多主题，应用起来也是非常方便的。</p>
+<p>下面开始正文 <code>:)</code></p>
+<h2 id="2-环境部署需求"><a href="#2-环境部署需求" class="headerlink" title="2.环境部署需求"></a>2.环境部署需求</h2><p>因为 Hexo 是需要 npm 来安装的， npm 又集成在node.js里，所以。。当然要先安装 Node.js 了<br><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></p>
+<h2 id="然后-没了"><a href="#然后-没了" class="headerlink" title="然后 没了"></a>然后 没了</h2><p>因为国内网络环境等原因，npm 可能速度比较慢，需要安装 <a href="https://npm.taobao.org/" target="_blank" rel="external">cnpm</a><br>当然了，要想向 GitHub 提交，必须要先安装了 <a href="https://git-scm.com/" target="_blank" rel="external">Git</a></p>
+<h2 id="3-本地搭建测试"><a href="#3-本地搭建测试" class="headerlink" title="3.本地搭建测试"></a>3.本地搭建测试</h2><p>参考 Hexo 官网的步骤，在本地下载好后，即可使用以下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ hexo init [folder]  #初始化一个项目</div><div class="line"></div><div class="line">$ hexo generate  #生成静态文件</div><div class="line">$ hexo clean  #更换主题等操作后，需要清除静态文件，然后重新生成</div><div class="line"></div><div class="line">$ hexo deploy  #部署。即将文件推送到 Github 等，部署前需要做一些配置，参考第四条</div><div class="line"></div><div class="line">$ hexo server  #启动本地服务，供测试。浏览器中打开http://localhost:4000/</div></pre></td></tr></table></figure></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>hexo 的配置文件在项目目录里的 <code>_config.yml</code> 文件，这里简要介绍一些必要配置，详细配置参考官网文档<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># Site</div><div class="line">title: GeekPy</div><div class="line">subtitle: 专注Python爬虫</div><div class="line">description:     #描述，生成在网页的 meta 标签中，用于优化搜索</div><div class="line">author: Geek-π</div><div class="line">language: zh-CN  #修改语言</div><div class="line">timezone: Asia/Shanghai  #时区上海</div></pre></td></tr></table></figure></p>
+<p><img src="http://i4.buimg.com/1949/08bdd12a60539cbb.png" alt="效果图"></p>
+<h2 id="4-推送-Github"><a href="#4-推送-Github" class="headerlink" title="4.推送 Github"></a>4.推送 Github</h2><p>在上述配置文件的最后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/name/name.github.io.git     #修改为你 Github 仓库的地址</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<hr>
+<p>在使用 <code>$ hexo deploy</code> 这条命令之前，需要在项目目录下先安装 <code>$ npm install hexo-deployer-git --save</code> </p>
+<h2 id="推送完成后可在name-github-io看到你的博客"><a href="#推送完成后可在name-github-io看到你的博客" class="headerlink" title="推送完成后可在name.github.io看到你的博客"></a>推送完成后可在name.github.io看到你的博客</h2><p>注意：Github 中需要新建仓库 <code>yourID.github.io</code> 以此为仓库名才可以</p>
+<h2 id="5-一些关于在-Linux-上部署遇到的问题"><a href="#5-一些关于在-Linux-上部署遇到的问题" class="headerlink" title="5.一些关于在 Linux 上部署遇到的问题"></a>5.一些关于在 Linux 上部署遇到的问题</h2><p>在 Linux上遇到了一些问题，cnpm使用官网上的第一种安装方式，没有安装成功。索性不装了，发现npm安装包的时候网速影响也不大。<br>中间步骤都相同，问题都出在最后向 Github 推送上<br>配置完，使用推送命令 总是显示错误403<br>后来在仓库目录下发现了 <code>.deploy_git</code> 隐藏目录，打开发现其逻辑应该是用 hexo 生成了静态文件，然后将静态文件复制到此 git 仓库中，调用 git 命令提交此仓库中的内容。<br>进入此目录，找到了 <code>.git</code> 目录 ,编辑了 config 配置文件，心想这下从能提交了吧。。。。然而还是403<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">修改username:password就可以</div><div class="line"></div><div class="line">[core]</div><div class="line">        repositoryformatversion = 0</div><div class="line">        filemode = true</div><div class="line">        bare = false</div><div class="line">        logallrefupdates = true</div><div class="line">[remote &quot;origin&quot;]</div><div class="line">        fetch = +refs/heads/*:refs/remotes/origin/*</div><div class="line">        url = https://username:password@github.com/XXXX/XXXX.github.io.git</div><div class="line">[branch &quot;master&quot;]</div><div class="line">	remote = https://username:password@github.com/XXXX/XXXX.github.io.git</div><div class="line">	merge = refs/heads/master</div></pre></td></tr></table></figure></p>
+<p>然后想到了，Hexo  配置文件中也有 GitHub 地址，会不会是这个参数把上面的顶掉了，随即修改了 <code>_config.yml</code> 将 repo 中的链接改成和上述同样的格式，加上账号密码</p>
+<p>竟然成功了~！</p>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>Hexo 官网可获取主题，主题的 Github 项目中有部署说明。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
